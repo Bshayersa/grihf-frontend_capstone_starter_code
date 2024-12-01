@@ -1,33 +1,24 @@
-/* صفحة التسجيل */
 .signup-container {
-    max-width: 400px; /* عرض الحاوية */
-    margin: 50px auto; /* محاذاة الحاوية في المنتصف */
+    max-width: 400px;
+    margin: 50px auto;
     padding: 20px;
     background-color: #f0f4fa;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center; /* محاذاة النصوص الافتراضية */
+    text-align: center;
 }
-
-
 
 .signup-container h1 {
     font-size: 26px;
     font-weight: bold;
-    text-align: center; /* محاذاة النص للوسط */
-    margin: 0 auto 15px; /* محاذاة في المنتصف ومسافة سفلية */
-    width: 100%; /* إزالة أي قيود على العرض */
+    margin-bottom: 15px;
 }
 
 .signup-container p {
-    text-align: center; /* محاذاة النص للوسط */
-    margin: 0 auto 15px; /* محاذاة في المنتصف ومسافة سفلية */
-    width: 100%; /* إزالة أي قيود على العرض */
-    color: #666;
     font-size: 13px;
+    color: #666;
+    margin-bottom: 15px;
 }
-
-
 
 .signup-container .login-link {
     color: #007bff;
@@ -41,49 +32,42 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* إضافة مسافة بين الحقول */
-    align-items: center; /* محاذاة العناصر في المنتصف */
+    gap: 15px;
 }
 
 label {
     font-size: 13px;
     font-weight: bold;
     text-align: left;
-    width: 50%; /* عرض النصوص مطابق للحقول */
-    margin-bottom: -5px; /* تقليل المسافة بين النص والحقول */
 }
 
-input, select {
-    width: 50%; /* عرض موحد لجميع الحقول */
+input {
+    width: 100%;
     padding: 8px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 0 auto; /* محاذاة في المنتصف */
-    margin-bottom: 10px; /* مسافة بين الحقول */
 }
 
-input:focus, select:focus {
+input:focus {
     outline: none;
     border-color: #007bff;
 }
 
-/* إضافة مسافة بين حقل كلمة المرور والأزرار */
-input[type="password"] {
-    margin-bottom: 15px; /* مسافة إضافية أسفل حقل كلمة المرور */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 button {
-    width: 50%; /* توحيد العرض مع الحقول */
-    padding: 10px;
+    padding: 8px 12px;
     font-size: 14px;
-    font-weight: bold;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 10px auto; /* إضافة مسافة بين الأزرار */
-    display: block; /* التأكد من أن الزر يأخذ صف كامل */
 }
 
 button.submit {
@@ -103,5 +87,3 @@ button.reset {
 button.reset:hover {
     background-color: #c9302c;
 }
-
-
