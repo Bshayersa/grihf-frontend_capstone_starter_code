@@ -1,1 +1,140 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4fa; /* لون الصفحة */
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f4fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.navbar .logo img {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+    padding: 5px 10px;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth-buttons .btn {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons .sign-up {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+}
+
+.auth-buttons .sign-up:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.auth-buttons .login {
+    background-color: transparent; /* خلفية شفافة */
+    border: 1px solid #007bff; /* حدود مشابهة */
+    color: #007bff; /* لون النص */
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons .login:hover {
+    background-color: #007bff; /* خلفية زرقاء عند التمرير */
+    color: #fff; /* لون النص يصبح أبيض */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex; /* استخدام Flexbox لتنسيق العناصر */
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    justify-content: flex-start; /* محاذاة العناصر نحو الأعلى */
+    align-items: center; /* محاذاة العناصر أفقياً في المنتصف */
+    height: 100vh; /* تغطية كامل ارتفاع الشاشة */
+    text-align: center; /* محاذاة النصوص في المنتصف */
+    background-color: #f0f4fa; /* لون الخلفية */
+    padding-top: 50px; /* إضافة مسافة علوية */
+}
+
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hero-section h2 {
+    font-size: 32px;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.hero-section p {
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.hero-section .get-started {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.hero-section .get-started:hover {
+    background-color: #0056b3;
+}
 
