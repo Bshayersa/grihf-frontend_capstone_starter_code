@@ -1,1 +1,92 @@
+/* صفحة تسجيل الدخول */
+.login-container {
+    max-width: 400px; /* عرض الحاوية */
+    margin: 50px auto; /* محاذاة الحاوية في المنتصف */
+    padding: 20px;
+    background-color: #f0f4fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
+.login-container h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+.login-container .login-signup-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container .login-signup-link:hover {
+    text-decoration: underline;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* إضافة مسافة بين الحقول */
+    align-items: center; /* محاذاة العناصر في المنتصف */
+}
+
+.login-form label {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%; /* عرض النصوص مطابق للحقول */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.login-form .login-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.login-form .login-submit:hover {
+    background-color: #0056b3;
+}
+
+.login-form .login-reset {
+    width: 100%; /* نفس عرض زر Login */
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #d9534f; /* لون أحمر للزر */
+    color: white;
+    margin-top: 10px; /* مسافة أعلى الزر */
+}
+
+.login-form .login-reset:hover {
+    background-color: #c9302c; /* لون أحمر أغمق عند التمرير */
+}
