@@ -1,1 +1,107 @@
+/* صفحة التسجيل */
+.signup-container {
+    max-width: 400px; /* عرض الحاوية */
+    margin: 50px auto; /* محاذاة الحاوية في المنتصف */
+    padding: 20px;
+    background-color: #f0f4fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* محاذاة النصوص الافتراضية */
+}
+
+
+
+.signup-container h1 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center; /* محاذاة النص للوسط */
+    margin: 0 auto 15px; /* محاذاة في المنتصف ومسافة سفلية */
+    width: 100%; /* إزالة أي قيود على العرض */
+}
+
+.signup-container p {
+    text-align: center; /* محاذاة النص للوسط */
+    margin: 0 auto 15px; /* محاذاة في المنتصف ومسافة سفلية */
+    width: 100%; /* إزالة أي قيود على العرض */
+    color: #666;
+    font-size: 13px;
+}
+
+
+
+.signup-container .login-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-container .login-link:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* إضافة مسافة بين الحقول */
+    align-items: center; /* محاذاة العناصر في المنتصف */
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    width: 50%; /* عرض النصوص مطابق للحقول */
+    margin-bottom: -5px; /* تقليل المسافة بين النص والحقول */
+}
+
+input, select {
+    width: 50%; /* عرض موحد لجميع الحقول */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 auto; /* محاذاة في المنتصف */
+    margin-bottom: 10px; /* مسافة بين الحقول */
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* إضافة مسافة بين حقل كلمة المرور والأزرار */
+input[type="password"] {
+    margin-bottom: 15px; /* مسافة إضافية أسفل حقل كلمة المرور */
+}
+
+button {
+    width: 50%; /* توحيد العرض مع الحقول */
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px auto; /* إضافة مسافة بين الأزرار */
+    display: block; /* التأكد من أن الزر يأخذ صف كامل */
+}
+
+button.submit {
+    background-color: #007bff;
+    color: white;
+}
+
+button.submit:hover {
+    background-color: #0056b3;
+}
+
+button.reset {
+    background-color: #d9534f;
+    color: white;
+}
+
+button.reset:hover {
+    background-color: #c9302c;
+}
+
 
